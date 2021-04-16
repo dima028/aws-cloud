@@ -35,10 +35,17 @@ In the event of a disaster, only some capacity is reduced. Best practise is to r
 **AWS Outpost**: fully operational mini-region inside your own data center. Owned and operated by AWS but isolated within your own building.
 
 ## How to Provision AWS Resources
+AWS Resources are accessible by API:
+
 **Application Programming Interface, API**: an interface with pre-determined ways to interact with AWS services. 
 
-**AWS Management Console**: Browser-based console to visually manage AWS resources. Sandbox environment for testing out environments.
+There are a couple of ways to make API calls and utilize AWS services, with varying levels of visual ease of use, sophistication/flexibility, and management. The following three means to provision AWS resources outline tools in which the user must provision and manage the resources themselves:
 
-**AWS Command Line Interface, CLI**: allows you to make calls using machine terminal. Enables you the power and schedulability/automation of using scripts. 
+1. **AWS Management Console**: Browser-based console to visually manage AWS resources. Sandbox environment for testing out environments. Not good for automation.
+2. **AWS Command Line Interface, CLI**: allows you to make calls using terminal. Enables user schedulability/automation. For scripting interactions with AWS using the terminal.
+3. **AWS Software Development Kits, SDKs**: allow you to interact with AWS resources through various programming languages. Allows you to avoid manual resource creation.
 
-**AWS Software Development Kits, SDKs**: allow you to interact with AWS resources through various programming languages. Allows you to avoid manual resource creation.
+Management tools to help you provision and manage AWS resources are also available, outlined below:
+
+1. **AWS Elastic Beanstalk**: service that helps you provision Amazon EC2-based environments. You provide code and desired configuration settings and Beanstalk builds out environment and deploys resources necessary to manage: capacity, load balancing, automatic scaling, and application health monitoring. Environment configurations can be saved and easily deployed again if needed. Enables yoou the visibility and control of all resources, without having to manually manage and provision all resources separately. Focus is business application over infrastructure. 
+2. **AWS CloudFormation**: infrastructure-as-code tool. Allows user to define wide variety of AWS resources using JSON or YAML text-based documents called CloudFormation templates. CloudFormation manages all the calls to the backend AWS APIs for you. Totally automated process: it determines the right operations to perform when managing your stack and rolls back changes automatically if it detects errors.
