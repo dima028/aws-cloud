@@ -14,7 +14,7 @@
 - Summarize the differences between Amazon Simple Notification Service (Amazon SNS) and Amazon Simple Queue Services (Amazon SQS)
 - Summarize additional AWS compute options
 
-## Module 3: Global Infrastructure and Reliability
+## [Module 3: Global Infrastructure and Reliability](https://github.com/dima028/aws-cloud/edit/main/module3.md)
 - Summarize the benefits of the AWS Global Infrastructure
 - Describe the basic concept of Availability Zones
 - Describe the benefits of Amazon CloudFront and Edge locations
