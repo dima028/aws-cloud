@@ -20,7 +20,7 @@
 - Describe the benefits of Amazon CloudFront and Edge locations
 - Compare different methods for provisioning AWS services
 
-## Module 4: Networking
+## [Module 4: Networking](https://github.com/dima028/aws-cloud/blob/main/module4.md)
 - Describe the basic concepts of networking
 - Describe the difference between public and private networking resources
 - Explain a virtual private gateway using a real life scenario
