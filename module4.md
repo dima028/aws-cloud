@@ -24,4 +24,8 @@
 **Security Groups**: Instance level of network security. Prevent all incoming traffic from entering the EC2 instance. Can be modified to accept specific traffic types (i.e. HTTPS, OS, Administration Requests, etc.). _Building doorman_ in the sense that it only checks incoming traffic, not outgoing. This is because it is _stateful_ in that it has a memory as to who has come in, therefore if you have incoming permissions you have outgoing permissions so there is no need to check outgoing traffic. Default is _deny all incoming_.
 
 ## Global Networking
-**Domain Name System, DNS**: "a translation service". Translates website names into Internet Protocol (IP) addresses.
+**Domain Name System, DNS**: "a translation service". Translates website names into Internet Protocol (IP) addresses. Involves Customer DNS Resolver communicating with company DNS server for IP address. _Eg. Route 53._ 
+
+_More about Route 53: DNS Web Service. Used to route end users. Can also direct traffic to different endpoints using several different routing policies, such as latency-based routing, geolocation DNS, geoproximity, and weighted round robin. Can also be used to register, purchase, and manage domain names._
+
+**Amazon Cloudfront**: a content delivery service. Works with Route 53 to deliver content to the user. Route 53 responds to customer request with IP address while Cloudfront responds by sending customer request to nearest edge location and connecting to the Application Load Balancer to process requests by availbale EC2 instances.
