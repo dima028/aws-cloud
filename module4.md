@@ -6,7 +6,9 @@
 ## Connectivity to AWS
 **Subnets**: groups of  IP addresses in your VPC that allow you to group resources together. Control whether a resource is publically or privately available. Used to control access to gateways. Can also control traffic permissions.
 
-**Internet Gatewate, IGW**: "doorway" open to the public to enable public facing resources to be accessed. Attaching an IGW to a VPC makes the resource publicly accessible.
+**Public Subnet**: A public subnet is a section of a VPC that contains public-facing resources.
+
+**Internet Gatewate, IGW**: "doorway" open to the public to enable public facing resources to be accessed. Attaching an IGW to a VPC makes the resource publicly accessible. Used to connect a VPC to the internet
 
 **Virtual Private Gateway**: private doorway, allows for a VPN connection between a VPC and private network. Attaching a virtual private gateway to a VPC makes the resource privately accessible.
 
@@ -28,4 +30,4 @@
 
 _More about Route 53: DNS Web Service. Used to route end users. Can also direct traffic to different endpoints using several different routing policies, such as latency-based routing, geolocation DNS, geoproximity, and weighted round robin. Can also be used to register, purchase, and manage domain names._
 
-**Amazon Cloudfront**: a content delivery service. Works with Route 53 to deliver content to the user. Route 53 responds to customer request with IP address while Cloudfront responds by sending customer request to nearest edge location and connecting to the Application Load Balancer to process requests by availbale EC2 instances.
+**Amazon Cloudfront**: a content delivery service. Works with Route 53 to deliver content to the user. Route 53 responds to customer request with IP address while Cloudfront responds by sending customer request to nearest edge location and connecting to the Application Load Balancer to process requests by availbale EC2 instances. Caches content closer to consumers.
