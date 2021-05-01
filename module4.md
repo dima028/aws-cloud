@@ -24,4 +24,4 @@
 **Security Groups**: Instance level of network security. Prevent all incoming traffic from entering the EC2 instance. Can be modified to accept specific traffic types (i.e. HTTPS, OS, Administration Requests, etc.). _Building doorman_ in the sense that it only checks incoming traffic, not outgoing. This is because it is _stateful_ in that it has a memory as to who has come in, therefore if you have incoming permissions you have outgoing permissions so there is no need to check outgoing traffic. Default is _deny all incoming_.
 
 ## Global Networking
-
+**Domain Name System, DNS**: "a translation service". Translates website names into Internet Protocol (IP) addresses.
