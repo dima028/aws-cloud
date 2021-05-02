@@ -6,3 +6,4 @@
 **Amazon Elastic Block Store, EBS**: provides block-level storage volumes that you can use with Amazon EC2 instances. create virtual hard drives, called EBS volumes, that attach to EC2 instances. These are separate drives from the local instance store volumes. Allow you to incrementally back-up your data via "snapshots".
 
 ## Amazon Simple Storage Service (Amazon S3):
+**Object Storage**:
