@@ -11,3 +11,12 @@
 *  **S3 Standard**: comes with 11 nines of durability. That means an object stored in S3 Standard has a 99.999999999 percentage probability that it will remain intact after a period of one year. Data is stored such that AWS can sustain concurrent loss of data in two separate storage facilities bc data is stored in at least three facilities so multiple copies reside across locations. Can also use S3 for static website hosting (_static website_: collection of HTML files).
 
 * **S3 Infrequent Access, S3-IA**: used for data that is accessed less frequently but requires rapid access when needed. Perfect to store backups, disaster recovery files, or any object that requires a long-term storage.
+
+* **S3 One Zone-Infrequent Access (S3 One Zone-IA)**:
+
+* **S3 Intelligent-Tiering**:
+
+* **S3 Glacier**:
+
+* **S3 Glacier Deep Archive**:
+
