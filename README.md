@@ -30,7 +30,7 @@
 - Describe the layers of security used in an IT strategy
 - Describe which services are used to interact with the AWS global network
 
-## Module 5: Storage and Databases
+## [Module 5: Storage and Databases](https://github.com/dima028/aws-cloud/blob/main/module5.md)
 - Summarize the basic concept of storage and databases
 - Describe benefits of Amazon Elastic Block Store (Amazon EBS)
 - Describe benefits of Amazon Simple Storage Service (Amazon S3)
