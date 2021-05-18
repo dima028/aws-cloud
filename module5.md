@@ -12,9 +12,11 @@
 
 * **S3 Infrequent Access, S3-IA**: used for data that is accessed less frequently but requires rapid access when needed. Perfect to store backups, disaster recovery files, or any object that requires a long-term storage.
 
-* **S3 One Zone-Infrequent Access (S3 One Zone-IA)**:  
+* **S3 One Zone-Infrequent Access (S3 One Zone-IA)**: Stores data in a single Availability Zone rather than minimum of 3. Has a lower storage price than S3 Standard-IA. Ideal storage class for low budget storage and your data is easily reproducible.
 
-* **S3 Intelligent-Tiering**: 
+* **S3 Intelligent-Tiering**: Ideal for data with unknown or changing access patterns
+Requires a small monthly monitoring and automation fee per object
+In the S3 Intelligent-Tiering storage class, Amazon S3 monitors objects’ access patterns. If you haven’t accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.
 
 * **S3 Glacier**: 
 
