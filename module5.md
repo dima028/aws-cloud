@@ -12,11 +12,11 @@
 
 * **S3 Infrequent Access, S3-IA**: used for data that is accessed less frequently but requires rapid access when needed. Perfect to store backups, disaster recovery files, or any object that requires a long-term storage.
 
-* **S3 One Zone-Infrequent Access (S3 One Zone-IA)**:
+* **S3 One Zone-Infrequent Access (S3 One Zone-IA)**:  
 
-* **S3 Intelligent-Tiering**:
+* **S3 Intelligent-Tiering**: 
 
-* **S3 Glacier**:
+* **S3 Glacier**: 
 
-* **S3 Glacier Deep Archive**:
+* **S3 Glacier Deep Archive**: 
 
