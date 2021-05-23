@@ -21,10 +21,15 @@
 * **S3 Glacier Deep Archive**: Lowest-cost object storage class ideal for archiving, but slower at retrieving objects than S3 Glacier. Able to retrieve objects within 12 hours.
 
 
-## Comparing Amazon EBS and Amazon S3
-**Amazon Elastic Block Storage, (EBS):** sizes up to 16 tebibytes, unique ability to survive termination of Amazon EC2 instances, solid state
+### Comparing Amazon EBS and Amazon S3
+**Amazon Elastic Block Storage, (EBS):** sizes up to 16 tebibytes, unique ability to survive termination of Amazon EC2 instances, solid state. Ideal for applications such as:
+* editing files (makes use of delta-updates unlike S3 treating each update as its own object)
+* complex read, write, change functions
 
-**Amazon Simple Storage Service**: Regional object storage corner, weighing in at unlimited storage, with individual objects at 5,000 gigabytes in size, they specialize in write once/read many, they are 99 .999 999 999% durable
+**Amazon Simple Storage Service, (S3)**: unlimited storage, individual objects up to 5 kilobytes. specialize in write once/read many, 99.999 999 999% durable, web enabled. Ideal for uses such as:
+* photo analysis (S3 optimzed for read-many applications, regional distribution means backup strategies are secure, different images have different URLs which can be accessed by S3 bc web enabled)
+* when using complete objects or making occasional changes
 
+## Amazon Elastic File System (Amazon EFS)
 
 
