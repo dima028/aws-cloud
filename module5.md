@@ -14,11 +14,17 @@
 
 * **S3 One Zone-Infrequent Access (S3 One Zone-IA)**: Stores data in a single Availability Zone rather than minimum of 3. Has a lower storage price than S3 Standard-IA. Ideal storage class for low budget storage and your data is easily reproducible.
 
-* **S3 Intelligent-Tiering**: Ideal for data with unknown or changing access patterns
-Requires a small monthly monitoring and automation fee per object
-In the S3 Intelligent-Tiering storage class, Amazon S3 monitors objects’ access patterns. If you haven’t accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.
+* **S3 Intelligent-Tiering**: Ideal for data with unknown or changing access patterns. Requires small monthly monitoring and automation fee per object. Amazon S3 monitors objects’ access patterns. If you haven’t accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.
 
 * **S3 Glacier**: Low-cost storage ideal for data archiving. Able to retrieve objects within a few minutes to few hours. For example, you might use this storage class to store archived customer records or older photos and video files.
 
 * **S3 Glacier Deep Archive**: Lowest-cost object storage class ideal for archiving, but slower at retrieving objects than S3 Glacier. Able to retrieve objects within 12 hours.
+
+
+## Comparing Amazon EBS and Amazon S3
+**Amazon Elastic Block Storage, (EBS):** sizes up to 16 tebibytes, unique ability to survive termination of Amazon EC2 instances, solid state
+
+**Amazon Simple Storage Service**: Regional object storage corner, weighing in at unlimited storage, with individual objects at 5,000 gigabytes in size, they specialize in write once/read many, they are 99 .999 999 999% durable
+
+
 
