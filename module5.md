@@ -25,11 +25,64 @@
 **Amazon Elastic Block Storage, (EBS):** sizes up to 16 tebibytes, unique ability to survive termination of Amazon EC2 instances, solid state. Ideal for applications such as:
 * editing files (makes use of delta-updates unlike S3 treating each update as its own object)
 * complex read, write, change functions
+* attach to EC2 instances that reside in the same availability zone
+* Stores data in a single availability zone
+* Availability zone level resource
+* do not need to automatically scale
 
 **Amazon Simple Storage Service, (S3)**: unlimited storage, individual objects up to 5 kilobytes. specialize in write once/read many, 99.999 999 999% durable, web enabled. Ideal for uses such as:
 * photo analysis (S3 optimzed for read-many applications, regional distribution means backup strategies are secure, different images have different URLs which can be accessed by S3 bc web enabled)
 * when using complete objects or making occasional changes
 
 ## Amazon Elastic File System (Amazon EFS)
+**Amazon Elastic File System, EFS**: Managed, scalable file system. EFS grows and shrinks automatically, and enables to have multiple instances that can access the data. 
+* Multiple read/write instances at the same time
+* regional resource: any instance in the region can read/write to it
+* linux file system
+* automatic scaling
+* regional service, stores data in and across multiple availability zones
+* duplicate storage enables access to data concurrently from all Availability Zones in the region where a file system is located
+* on-premise servers can access Amazon EFS using AWS Direct Connect
+
+## Amazon Relational Database Service (Amazon RDS)
+### Relational Database Service, RDS
+Store data such that it related to other data (i.e. customer table and address table) and query with SQL.
+
+### Amazon RDS
+Database management tool. Can migrate data from Databases to AWS via _Lift and Shift_.
+
+Additional features such as:
+* Automated patching
+* Backups
+* Redundancy
+* Failover
+* Disaster recovery
+
+Available on 6 database engines:
+* MySQL
+* PostgreSQL
+* Oracle
+* Microsoft SQL Server
+* _Amazon Aurora_
+* MariaDB
+
+### Amazon Aurora
+Amazon RDS Database Engine. Highlights include:
+* Cost effective: 1/10th the price of commercial databases.
+ * reduces cost by reducing unnecesary input/outpit (I/O) operations while ensuring DB reliability 
+* 5x faster than standard MySQL databases
+* 3x faster than standard PostgreSQL databases
+* Comes in two forms:
+ * MySQL
+ * PostgreSQL
+* Data replicated across facilities so you have 6 copies at any given time
+* Can deploy up to 15 read replicas to offload reals and scale performace
+* Continuous S3 backups ready to restore
+* _Point in time_ recovery to recover data at a particular point in time.
+* Ideal for:
+ * High availability workloads 
+ 
+## Amazon DynamoDB
+
 
 
