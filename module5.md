@@ -51,6 +51,11 @@ Store data such that it related to other data (i.e. customer table and address t
 ### Amazon RDS
 Database management tool. Can migrate data from Databases to AWS via _Lift and Shift_.
 
+Customer ownership/control over:
+* Data
+* Schema
+* Network
+
 Additional features such as:
 * Automated patching
 * Backups
@@ -83,4 +88,9 @@ Amazon RDS Database Engine. Highlights include:
  * High availability workloads 
  
 ## Amazon DynamoDB
-**Amazon DynamoDB**: NoSQL serverless database with *DynamoDB tables* organized into *items* with *attributes*. DynamoDB manages the underlying storage and scalability for you. Has a millisecond response time. NoSQL makes it dodge performance and scaling issues that rigid schemas that SQL would entail.
+**Amazon DynamoDB**: NoSQL non-relational serverless database with *DynamoDB tables* organized into *items* with *attributes*. DynamoDB manages the underlying storage and scalability for you. Has a millisecond response time. NoSQL makes it dodge performance and scaling issues that rigid schemas that SQL would entail. Need simpler queries for one table rather than multi-table complex SQL queries. Optimized for querying single tables very quickly and high scalability.
+* Serverless: DynamoDB is serverless, which means that you do not have to provision, patch, or manage servers. You also do not have to install, maintain, or operate software.
+* Automatic scaling: As the size of your database shrinks or grows, DynamoDB automatically scales to adjust for changes in capacity while maintaining consistent performance. This makes it a suitable choice for use cases that require high performance while scaling.
+
+## Amazon Redshift
+
