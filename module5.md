@@ -83,6 +83,4 @@ Amazon RDS Database Engine. Highlights include:
  * High availability workloads 
  
 ## Amazon DynamoDB
-
-
-
+**Amazon DynamoDB**: NoSQL serverless database with *DynamoDB tables* organized into *items* with *attributes*. DynamoDB manages the underlying storage and scalability for you. Has a millisecond response time. NoSQL makes it dodge performance and scaling issues that rigid schemas that SQL would entail.
