@@ -93,4 +93,9 @@ Amazon RDS Database Engine. Highlights include:
 * Automatic scaling: As the size of your database shrinks or grows, DynamoDB automatically scales to adjust for changes in capacity while maintaining consistent performance. This makes it a suitable choice for use cases that require high performance while scaling.
 
 ## Amazon Redshift
+**Amazon Redshift**: This is data warehousing as a service. Data warehouses designed to store big data for historical analytics (as opposed to operational analysis). Optimized for looking at already set data. Massively scalable as _Redshift nodes_ can scale up to multiple petabytes. Optimized for *Business Intelligence, BI* use cases (i.e. big data solutions). 
+
+**Amazon Redshift Spectrum**: can be used in cooperation with *Amazon Redshift* in order to run a single SQL query against exabytes of unstructured data running in data lakes.
+
+
 
