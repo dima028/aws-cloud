@@ -98,7 +98,7 @@ Amazon RDS Database Engine. Highlights include:
 **Amazon Redshift Spectrum**: can be used in cooperation with *Amazon Redshift* in order to run a single SQL query against exabytes of unstructured data running in data lakes.
 
 ## AWS Database Migration Service
-**Amazon Database Migration Service, DMS,**: helps customers migrate existing databases onto AWS in a secure and easy fashion between a source and a target database. The source database remains fully operational during the migration, minimizing downtime to applications that rely on that database. The source and target databases don't have to be of the same type.
+**Amazon Database Migration Service, DMS,**: helps customers migrate existing databases onto AWS in a secure and easy fashion between a source and a target database. The source database remains fully operational during the migration, minimizing downtime to applications that rely on that database. The source and target databases don't have to be of the same type. Use cases include:
 
 * **Homogenous Migrations**: Migration between databases of the same type. Can be from:
  *  MySQL: MySQL to Amazon RDS for MySQL,
@@ -106,7 +106,25 @@ Amazon RDS Database Engine. Highlights include:
  *  Oracle: Oracle to Amazon RDS, 
 
 * **Heterogenous Migrations**: Migrations between databases of different types. A two-step process:
- * Convert schema structures, data types, and database code using the AWS Schema Conversion Tool to match that of the target database. 
+ * Convert schema structures, data types, and database code using the _AWS Schema Conversion Tool_ to match that of the target database. 
  * Use DMS to migrate data from the source database to the target database. 
 
+* **Development and test database migrations:** migration to develop and test against production data, without affection production users. 
+ * use DMS to migrate copy of production database to dev or test environemnts, either one-off or continuously.
 
+* **Database Consolidation:** consolidating several databases into one central database. 
+
+* **Continuous database replication:** using DMS to perform continuous data replication, for disaster recovery or because of geographic separation. 
+
+## Additional database services
+**Amazon DocumentDB**: document database service that supports _MongoDB_ workloads, a document database program. Full content management system, ideal for  content management, catalogs, user profiles.
+
+**Amazon Neptune**: graph database service. Can be used to build and run applications that work with highly connected datasets, such as recommendation engines, fraud detection, knowledge graphs, or other social network applications. 
+
+**Amazon Quantum Ledger Database (Amazon QLDB)**: Immutable ledger database service. Can be used to review a complete history of all the changes that have been made to your application data. Ideal for supply chains, or tracking financial/banking records. Being immutable makes it audit friendly as any entry can never be removed from the audits, unlike other blockchain solutions. 
+
+**Amazon Managed Blockchain**: service that you can use to create and manage blockchain networks with open-source frameworks. Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority. 
+
+**Amazon ElastiCache**: service that adds caching layers on top of your databases to help improve the read times of common requests from milliseconds to microseconds. It supports two types of data stores: _Redis_ and _Memcached_.
+
+**Amazon DynamoDB Accelerator, DAX**: in-memory native caching layer for DynamoDB. Helps improve response times from single-digit milliseconds to microseconds.
