@@ -40,7 +40,7 @@
 - Describe the benefits of Amazon DynamoDB
 - Summarize various database services
 
-## [Module 5: Security](https://github.com/dima028/aws-cloud/blob/main/module6.md)
+## [Module 6: Security](https://github.com/dima028/aws-cloud/blob/main/module6.md)
 - Explain the benefits of the shared responsibility model
 - Describe multi-factor authentication (MFA)
 - Differentiate between the AWS Identity and Access Management (IAM) security levels
