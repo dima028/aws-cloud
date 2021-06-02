@@ -3,7 +3,7 @@
 ## Instance Stores & Amazon Elastic Block Store (Amazon EBS)
 **Block-Level Storage**: a place to store files. Updates only changing bytes, making it efficient. Temporary storage. Behave like physical hard drives. An instance store provides temporary block-level storage for an Amazon EC2 instance. An instance store is disk storage that is physically attached to the host computer for an EC2 instance, and therefore has the same lifespan as the instance. When the instance is terminated, you lose any data in the instance store.
 
-**Amazon Elastic Block Store, EBS**: provides block-level storage volumes that you can use with Amazon EC2 instances. create virtual hard drives, called EBS volumes, that attach to EC2 instances. These are separate drives from the local instance store volumes. Allow you to incrementally back-up your data via "snapshots".
+**Amazon Elastic Block Store, EBS**: provides block-level storage volumes that you can use with Amazon EC2 instances. Local storage that is not ephemeral. create virtual hard drives, called EBS volumes, that attach to EC2 instances. These are separate drives from the local instance store volumes. Allow you to incrementally back-up your data via "snapshots".
 
 ## Amazon Simple Storage Service (Amazon S3):
 **Amazon Simple Storage Service, or S3**: data store that allows you to store and retrieve an unlimited amount of data at any scale. Data is stored as objects,  in buckets. You can also version objects to protect them from accidental deletion. You can even create multiple buckets and store them across different classes or tiers of data. You can then create permissions to limit who can see or even access objects. And you can even stage data between different tiers. These tiers offer mechanisms for different storage use cases such as data that needs to be accessed frequently, versus audit data that needs to be retained for several years.
@@ -16,9 +16,9 @@
 
 * **S3 Intelligent-Tiering**: Ideal for data with unknown or changing access patterns. Requires small monthly monitoring and automation fee per object. Amazon S3 monitors objects’ access patterns. If you haven’t accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.
 
-* **S3 Glacier**: Low-cost storage ideal for data archiving. Able to retrieve objects within a few minutes to few hours. For example, you might use this storage class to store archived customer records or older photos and video files.
+* **S3 Glacier**: Low-cost storage ideal for data archiving. Able to retrieve objects within a few minutes to few hours. For example, you might use this storage class to store archived customer records or older photos and video files. Optimized for archival data.
 
-* **S3 Glacier Deep Archive**: Lowest-cost object storage class ideal for archiving, but slower at retrieving objects than S3 Glacier. Able to retrieve objects within 12 hours.
+* **S3 Glacier Deep Archive**: Lowest-cost object storage class ideal for archiving, but slower at retrieving objects than S3 Glacier. Able to retrieve objects within 12 hours.  Optimized for archival data.
 
 
 ### Comparing Amazon EBS and Amazon S3
@@ -35,7 +35,7 @@
 * when using complete objects or making occasional changes
 
 ## Amazon Elastic File System (Amazon EFS)
-**Amazon Elastic File System, EFS**: Managed, scalable file system. EFS grows and shrinks automatically, and enables to have multiple instances that can access the data. 
+**Amazon Elastic File System, EFS**: Managed, scalable file system. File storage use cases. EFS grows and shrinks automatically, and enables to have multiple instances that can access the data. 
 * Multiple read/write instances at the same time
 * regional resource: any instance in the region can read/write to it
 * linux file system
