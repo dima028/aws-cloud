@@ -97,5 +97,16 @@ Amazon RDS Database Engine. Highlights include:
 
 **Amazon Redshift Spectrum**: can be used in cooperation with *Amazon Redshift* in order to run a single SQL query against exabytes of unstructured data running in data lakes.
 
+## AWS Database Migration Service
+**Amazon Database Migration Service, DMS,**: helps customers migrate existing databases onto AWS in a secure and easy fashion between a source and a target database. The source database remains fully operational during the migration, minimizing downtime to applications that rely on that database. The source and target databases don't have to be of the same type.
+
+* **Homogenous Migrations**: Migration between databases of the same type. Can be from:
+ *  MySQL: MySQL to Amazon RDS for MySQL,
+ *  SQP Server: Microsoft SQL Server to Amazon RDS,
+ *  Oracle: Oracle to Amazon RDS, 
+
+* **Heterogenous Migrations**: Migrations between databases of different types. A two-step process:
+ * Convert schema structures, data types, and database code using the AWS Schema Conversion Tool to match that of the target database. 
+ * Use DMS to migrate data from the source database to the target database. 
 
 
