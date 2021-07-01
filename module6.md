@@ -12,13 +12,13 @@
   * Multi-factor authentication,
 
 **Account Management Best Practises:**
-* AWS Account Root User: has complete access to all the AWS services and resources in the account.
+* **AWS Account Root User**: has complete access to all the AWS services and resources in the account.
   *  **Do not** use the root user for everyday tasks.
   *  **Do** use the root user to create your first IAM user and assign it permissions to create other users.
   *  **Do** continue to create other IAM users, and access those identities for performing regular tasks throughout AWS. Only use root user when you need to perform a limited number of tasks that are only available to the root user (i.e. changing root user email address, changing AWS support plan).
 
-**IAM Users**: an identity that you create in AWS, with a name and credentials. It represents the person or application that interacts with AWS services and resources. By default, new IAM users in AWS have no permissions associated with them.
+* **IAM Users**: an identity that you create in AWS, with a name and credentials. It represents the person or application that interacts with AWS services and resources. By default, new IAM users in AWS have no permissions associated with them.
   *  **Do** create individual IAM users for each person who needs to access AWS, even if they are to have the same credentials.
 
-**IAM Policies**: a document that allows or denies permissions to AWS services and resources. Enables you to customize users’ levels of access to resources (i.e. allow users to access certain S3 buckets within your AWS account).
+* **IAM Policies**: a document that allows or denies permissions to AWS services and resources. Enables you to customize users’ levels of access to resources (i.e. allow users to access certain S3 buckets within your AWS account).
   *  **Do** follow the security principle of _least privilege_ when granting permissions, to prevent users or roles from having more permissions than needed to perform their tasks. 
