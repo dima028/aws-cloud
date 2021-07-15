@@ -49,7 +49,7 @@
 - Summarize the benefits of compliance with AWS
 - Explain primary AWS security services at a basic level
 
-## Module 7: Monitoring and Analytics
+## [Module 7: Monitoring and Analytics](HTTPS://GitHub.com/dima028/aws-cloud/blob/main/module 7.md)
 - Summarize approaches to monitoring your AWS environment
 - Describe the benefits of Amazon CloudWatch
 - Describe the benefits of AWS CloudTrail
