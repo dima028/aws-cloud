@@ -22,3 +22,14 @@
 
 * **IAM Policies**: a document that allows or denies permissions to AWS services and resources. Enables you to customize users’ levels of access to resources (i.e. allow users to access certain S3 buckets within your AWS account).
   *  **Do** follow the security principle of _least privilege_ when granting permissions, to prevent users or roles from having more permissions than needed to perform their tasks. 
+
+## AWS Organizations:
+**AWS Organizations**: AWS Service to install order and to enforce who is allowed to perform certain functions in what account.
+* Consolidated billing -> bulk discounts!
+* hierarchical groupings of your accounts to meet security, compliance, or budgetary needs.
+* isolate workload.
+* **Organizational Units, OUs**: Organizations can be grouped into OUs based of access needs.
+
+**Organizations**: a central location to manage multiple AWS accounts
+
+**Service Control Policies, SCPs**: AWS service to specify the maximum permissions for individual member accounts or OUs in the organization.
